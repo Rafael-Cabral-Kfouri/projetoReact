@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-    <b>E aí galera, blz? Essa lista de tarefas foi desenvolvida com React e Javascript para 
+    <b>E aí galera :raising_hand_man:, blz? Essa lista de tarefas foi desenvolvida com React e Javascript para 
     auxiliar você na execução das tarefas diárias no trabalho, nos estudos e na vida pessoal.</b>
 </p>
 
