@@ -11,10 +11,10 @@
 </p>
 
 <h2 id="layout">🎨 Layout</h2>
-
+ ![Image](https://github.com/user-attachments/assets/d69b401e-b2a5-4919-9abf-4f93808f9cf4)
+</p>
 <p align="center">
-    <img src="../.github/example.png" alt="Image Example" width="400px">
-    <img src="../.github/example.png" alt="Image Example" width="400px">
+    <img src="https://github.com/user-attachments/assets/d69b401e-b2a5-4919-9abf-4f93808f9cf4">
 </p>
 
 <h2 id="technologies">💻 Tecnologies</h2>
@@ -43,5 +43,7 @@ git clone https://github.com/Rafael-Cabral-Kfouri/projetoReactToDo.git
 
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 
