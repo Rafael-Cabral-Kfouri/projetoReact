@@ -10,6 +10,13 @@
     auxiliar você na execução das tarefas :woman_mechanic: :man_office_worker: diárias no trabalho, nos estudos e na vida pessoal.</b>
 </p>
 
+<h2 id="layout">🎨 Layout</h2>
+
+<p align="center">
+    <img src="../.github/example.png" alt="Image Example" width="400px">
+    <img src="../.github/example.png" alt="Image Example" width="400px">
+</p>
+
 <h2 id="technologies">💻 Tecnologies</h2>
 
 <ul>
