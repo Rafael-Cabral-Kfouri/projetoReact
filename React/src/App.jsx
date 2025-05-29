@@ -1,29 +1,35 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import AddTask from "./components/addTasks";
 import Tasks from "./components/tasks";
 import './index.css';
+import {v4} from "uuid";
 
 function App() {
-  const [tasks, setTasks] = useState([
-  { 
-    id: 1,
-    title: 'estudar programação',
-    description: 'se tornar um desenvolvedor fullstack',
-    isCompleted: false
-  },
-  {
-    id: 2,
-    title: 'estudar inglês',
-    description: 'se tornar fluente',
-    isCompleted: false
-  },
-  {
-    id: 3,
-    title: 'estudar matemática',
-    description: 'se tornar um nerd',
-    isCompleted: false
-  },
-]);
+  const [tasks, setTasks] = useState(JSON.parse(localStorage.getItem("tasks")) || []);
+//sempre que eu mudar o meu state de task preciso atualizar meu local storage com ess state
+useEffect(() =>{
+  localStorage.setItem('tasks', JSON.stringify(tasks))
+}, [tasks])
+
+useEffect(() => {
+  const fetchTasks = async () => {
+    //CHAMAR A API   
+    const response = await fetch(
+      'https://jsonplaceholder.typicode.com/todos?_limit=10', 
+      {
+        method: 'GET',
+      }
+    );  
+//PEGAR DADOS QUE ELA RETORNA
+    const data = await response.json()
+//ARMAZENAR E PERSISTIR ESSES DADOS NO STATE
+   // setTasks(data)
+  }
+  // Se quiser você pode chamar uma API PARA PEGAR AS TAREFAS
+  // fetchTasks()
+
+}, [])
+  
 
 function clicouNaTask(taskId){
   const newTasks = tasks.map((task) => {
@@ -43,14 +49,13 @@ function clicouNaTask(taskId){
 
 function addListaDeBaixo (title, description) {
   const newTask = {
-    id: tasks.length + 1,
+    id: v4(),
     title: title, // pode fazer um 'short hand sintaxe'. Nome da propriedade é igual nome parametro
     description: description, 
     isCompleted: false 
   };
-  setTasks([...tasks, newTask])// equivalente ao tasks.push(newTask) mas não funcioa com push
+  setTasks([...tasks, newTask])// quando se atualiza um estado não se usa push
 }
-  
 return (
     <div className="w-screen h-screen bg-slate-500 flex justify-center p-6">
       <div className="w-[500px] space-y-4" >
