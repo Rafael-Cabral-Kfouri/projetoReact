@@ -6,8 +6,7 @@
 </p>
 
 <p align="center">
-    <b>E aí galera :raising_hand_man:, blz? Essa lista de tarefas foi desenvolvida :man_technologist: com React e Javascript para 
-    auxiliar você na execução das tarefas :woman_mechanic: :man_office_worker: diárias no trabalho, nos estudos e na vida pessoal.</b>
+    <b>E aí galera :raising_hand_man:, blz? Essa lista de tarefas foi desenvolvida :man_technologist: com React e consome uma API pública. Foi implementado rotas e SPA.</b>
 </p>
 
 <h2 id="layout">🎨 Layout</h2>
