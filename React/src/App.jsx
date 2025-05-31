@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import AddTask from "./components/addTasks";
+import AddTask from "./components/AddTasks";
 import Tasks from "./components/tasks";
 import './index.css';
 import {v4} from "uuid";
